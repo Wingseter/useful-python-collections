@@ -1,6 +1,6 @@
 import datetime
 
-birth_day = datetime.date(1997, 1, 16)
+birth_day = datetime.date(1997, 8, 16)
 now_time = datetime.date.today()
 
 final_answer = 0
@@ -10,9 +10,9 @@ month_compare = now_time.month - birth_day.month
 day_compare = now_time.day - birth_day.day
 
 if month_compare < 0 or (month_compare == 0 and day_compare < 0): # birthday not pass
-    final_answer = year_compare
-else:
     final_answer = year_compare - 1
+else:
+    final_answer = year_compare 
 
 korean_age = year_compare + 1
 
